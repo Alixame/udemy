@@ -6,11 +6,9 @@ $idade = 18;
 
 $file = fopen("log.txt", "w+");
 
-fwrite($file, date("Y/m/d H:i:s"));
-fwrite($file, '
-Nome: '.$nome);
-fwrite($file, '
-Idade: '.$idade);
+fwrite($file, date("Y/m/d H:i:s") . "\r\n");
+fwrite($file, 'Nome: ' .$nome. "\r\n");
+fwrite($file, 'Idade: ' .$idade. "\r\n");
 
 
 fclose($file);
