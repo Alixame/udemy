@@ -1,10 +1,10 @@
 <?php
 
+date_default_timezone_set('America/Sao_Paulo');
+
 $images = scandir('images'); 
 
 $data = array();
-
-date_default_timezone_set('America/Sao_Paulo');
 
 foreach ($images as $image) {
     
