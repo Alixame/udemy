@@ -16,7 +16,7 @@ foreach ($images as $image) {
         
         $info["size"] = filesize($filename);
         $info["modified"] = date("d/m/Y H:i:s", filemtime($filename));
-        $info["url"] = "http://localhost/cursos/udemy/Manipulando-Arquivos/".str_replace("\\","/",$filename);
+        $info["url"] = "http://localhost/cursos/udemy/Manipulando-Arquivos/Pastas/".str_replace("\\","/",$filename);
 
         array_push($data,$info);
 
