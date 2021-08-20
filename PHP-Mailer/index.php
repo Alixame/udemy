@@ -1,6 +1,6 @@
 <?php
 
-require_once "vendor/autoload.php";
+require_once __DIR__."vendor".DIRECTORY_SEPARATOR."autoload.php";
 
 //Create a new PHPMailer instance
 $mail = new PHPMailer();
