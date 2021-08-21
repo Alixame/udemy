@@ -34,23 +34,23 @@ $mail->SMTPSecure = 'tls';
 $mail->SMTPAuth = true;
 
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = 'lucasali2003@gmail.com';
+$mail->Username = 'seu email';
 
 //Password to use for SMTP authentication
-$mail->Password = 'Ali162676';
+$mail->Password = 'sua senha';
 
 //Set who the message is to be sent from
 //Note that with gmail you can only use your account address (same as `Username`)
 //or predefined aliases that you have configured within your account.
 //Do not use user-submitted addresses in here
-$mail->setFrom('lucasali2003@gmail.com', 'Lucas Alixame');
+$mail->setFrom('seu email', 'seu nome');
 
 //Set an alternative reply-to address
 //This is a good place to put user-submitted addresses
 //$mail->addReplyTo('replyto@example.com', 'First Last');
 
 //Set who the message is to be sent to
-$mail->addAddress('lucasali2003@gmail.com', 'Lucas Alixame');
+$mail->addAddress('email destinatario', 'nome destinatario');
 
 //Set the subject line
 $mail->Subject = 'Confirme aqui seu email!';
