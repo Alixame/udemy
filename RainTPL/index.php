@@ -21,3 +21,8 @@ $tpl->assign("version", PHP_VERSION);
 $tpl->draw('index');
 */
 
+$tpl->assign("URL", "http://localhost/cursos/udemy/RainTPL");
+$tpl->assign("titulo", "Titulo Teste");
+$tpl->assign("nome", "Hey Devs!");
+$tpl->assign("version", PHP_VERSION);
+$tpl->draw('teste');

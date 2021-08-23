@@ -1,4 +1,4 @@
-
+<?php if(!class_exists('Rain\Tpl')){exit;}?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title> {$titulo} </title>
+    <title> <?php echo htmlspecialchars( $titulo, ENT_COMPAT, 'UTF-8', FALSE ); ?> </title>
   </head>
   <body class="bg-dark text-light">
   	<div class="container">
@@ -18,9 +18,9 @@
             <center>
             <h1>MVC</h1>
             <p>Model - View - Controller</p>
-            <a href="{$URL}/"><button class="btn btn-light">HOME</button></a>
-            <a href="{$URL}/sobre"><button class="btn btn-light">SOBRE</button></a>
-            <a href="{$URL}/comentarios"><button class="btn btn-light">COMENTÁRIOS</button></a>
+            <a href="<?php echo htmlspecialchars( $URL, ENT_COMPAT, 'UTF-8', FALSE ); ?>/"><button class="btn btn-light">HOME</button></a>
+            <a href="<?php echo htmlspecialchars( $URL, ENT_COMPAT, 'UTF-8', FALSE ); ?>/sobre"><button class="btn btn-light">SOBRE</button></a>
+            <a href="<?php echo htmlspecialchars( $URL, ENT_COMPAT, 'UTF-8', FALSE ); ?>/comentarios"><button class="btn btn-light">COMENTÁRIOS</button></a>
             </center>
         </nav>
 
@@ -51,7 +51,7 @@
 
         <footer>     
         <hr>
-        <center> {$nome} - <a href="www.youtube.com/channel/UCicl23jI1nPLp6w1zbKxHQQ">Canal Youtube</a> - 2021</center>
+        <center> <?php echo htmlspecialchars( $nome, ENT_COMPAT, 'UTF-8', FALSE ); ?> - <a href="www.youtube.com/channel/UCicl23jI1nPLp6w1zbKxHQQ">Canal Youtube</a> - 2021</center>
         </footer>
 
   	</div>
